@@ -1,0 +1,251 @@
+
+html{
+    box-sizing: border-box;
+}
+h1,h2{
+    background:rgb(243, 129, 129);
+    margin:0px;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 5%;
+}
+h3{
+    background:rgb(212, 224, 241); 
+    border-radius: 5%; 
+    text-align: center;  
+}
+@keyframes fontbulger {
+    0% {
+      font-size: 1.1vw;
+    }
+    30% {
+      font-size: 1.2vw;
+    }
+    100% {
+      font-size: 1.3vw;
+    }
+}
+li:nth-child(1) h3{
+    animation: fontbulger 2s infinite;
+}
+#grid-floats{
+    display: inline-block;        
+    text-align: center;
+    list-style: none;    
+    overflow: hidden; 
+    background:rgb(119, 145, 155); 
+    margin-left:0%;      
+}    
+#grid-flex{
+    display: inline-flex;    
+    list-style: none;   
+    flex-wrap: wrap;     
+    text-align: center;
+    overflow: hidden;
+    align-content: center;
+    background:rgb(119, 145, 155);
+}
+@media(min-width:1281px){
+    #grid-floats .grid-item {
+        width:21%;
+        border-radius: 2%;
+        justify-content: center; 
+        font-size:1.1vw;
+        height:70vmin;   
+        float: left;
+        overflow:auto;
+        background: white;
+        padding:1%;  
+        margin:1%;
+                       
+    }    
+    #grid-floats li:nth-child(1){        
+        width:46%;
+        box-shadow:
+        0 0 20px black,
+        20px 15px 30px yellow,
+        -20px 15px 30px lime,
+        -20px -15px 30px blue,
+        20px -15px 30px red;            
+    }
+    #grid-floats li:nth-child(1) img{
+        width:50vh;
+        height:40vh;                    
+    } 
+    .grid-item img{
+        width:30vh;
+        height:30vh;       
+        transition: transform .2s;               
+    }
+    .grid-item img:hover {
+        transform: scale(1.1);
+    }
+    #grid-flex .grid-item {
+        width:21%;        
+        justify-content: center;
+        border-radius: 2%; 
+        font-size:1.1vw;
+        height:70vmin;         
+        overflow:auto;
+        background: white;
+        padding:1%;  
+        margin:1%;      
+    } 
+    #grid-flex li:nth-child(1){        
+        width:46%;
+        box-shadow:
+        0 0 20px black,
+        20px 15px 30px yellow,
+        -20px 15px 30px lime,
+        -20px -15px 30px blue,
+        20px -15px 30px red;                     
+    }        
+    #grid-flex li:nth-child(1) img{
+        width:50vh; 
+        height:40vh;          
+    }          
+}
+@media(min-width: 768px) and (max-width: 1280px){
+    #grid-floats .grid-item {
+        width:28%;        
+        justify-content: center; 
+        font-size:1.1vw;
+        height:62vmin;   
+        float: left;
+        overflow:auto;
+        border-radius: 2%;
+        background: white;
+        padding:1%;  
+        margin:1%;       
+    }
+    #grid-floats li:nth-child(1){
+        width:44%;
+        box-shadow:
+        0 0 20px black,
+        20px 15px 30px yellow,
+        -20px 15px 30px lime,
+        -20px -15px 30px blue,
+        20px -15px 30px red;                      
+    }
+    #grid-floats li:nth-child(2){
+        width:44%;
+        box-shadow:
+        0 0 20px black,
+        20px 15px 30px yellow,
+        -20px 15px 30px lime,
+        -20px -15px 30px blue,
+        20px -15px 30px red;                            
+    }
+    li:nth-child(2) h3{
+        animation: fontbulger 2s infinite;
+    }
+    #grid-floats li:nth-child(1) img{
+        width:50vh;                    
+    }
+    #grid-floats li:nth-child(2) img{
+        width:50vh; 
+        background:white;                   
+    }  
+    .grid-item img{
+        width:33vh;        
+        transition: transform .2s;        
+    }
+    .grid-item img:hover {
+        transform: scale(1.1);
+    }
+    #grid-flex .grid-item {
+        width:28%;        
+        justify-content: center; 
+        font-size:1.1vw;
+        height:62vmin;        
+        overflow:auto;
+        border-radius: 2%;
+        background: white;
+        padding:1%;  
+        margin:1%;       
+    } 
+    #grid-flex li:nth-child(1){
+        width:44%;
+        box-shadow:
+        0 0 20px black,
+        20px 15px 30px yellow,
+        -20px 15px 30px lime,
+        -20px -15px 30px blue,
+        20px -15px 30px red;                      
+    }
+    #grid-flex li:nth-child(2){
+        width:44%;
+        box-shadow:
+        0 0 20px black,
+        20px 15px 30px yellow,
+        -20px 15px 30px lime,
+        -20px -15px 30px blue,
+        20px -15px 30px red;                            
+    }
+    #grid-flex li:nth-child(1) img{
+        width:50vh;                    
+    }
+    #grid-flex li:nth-child(2) img{
+        width:50vh; 
+        background:white;                   
+    }  
+}
+@media(max-width: 767px){
+    #grid-floats .grid-item {
+        width: 41%;
+        border-radius: 2%;
+        justify-content: center; 
+        font-size:1.5vw;
+        height:75vmin;   
+        float: left;
+        overflow:auto;
+        background: white;
+        padding:1%;  
+        margin:1%;       
+    }
+    #grid-floats li:nth-child(1){
+        width:86%; 
+        box-shadow:
+        0 0 20px black,
+        20px 15px 30px yellow,
+        -20px 15px 30px lime,
+        -20px -15px 30px blue,
+        20px -15px 30px red;                     
+    }    
+    #grid-floats li:nth-child(1) img{
+        width:48%;
+    }
+    .grid-item img{
+        width:45%;        
+        transition: transform .2s;        
+    }
+    .grid-item img:hover {
+        transform: scale(1.1);
+    }
+    #grid-flex .grid-item {
+        width: 41%;
+        border-radius: 2%;
+        justify-content: center; 
+        font-size:1.5vw;
+        height:75vmin;        
+        overflow:auto;
+        background: white;
+        padding:1%;  
+        margin:1%;            
+    } 
+    #grid-flex li:nth-child(1){
+        width:86%;
+        box-shadow:
+        0 0 20px black,
+        20px 15px 30px yellow,
+        -20px 15px 30px lime,
+        -20px -15px 30px blue,
+        20px -15px 30px red;                    
+    }
+    #grid-flex li:nth-child(1) img{
+        width:45%;
+    }    
+}
+
+   
+
